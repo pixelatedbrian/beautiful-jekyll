@@ -5,7 +5,7 @@ title: Portfolio - Brian Hardenstein
 
 **All projects:**
 * Python 3 was used for all projects unless otherwise noted.
-* Used models from SciKit-Learn unless otherwise noted. 
+* Used models from SciKit-Learn unless otherwise noted.
 * All projects utilized CRISP-DM methodology
 * Sorted with most recent projects first
 
@@ -17,9 +17,9 @@ title: Portfolio - Brian Hardenstein
 
 **Kaggle Statoil Iceberg/Ship Classification contest**
 * **Tools Used:** Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
-* **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models. 
+* **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models.
 
-[Summary Blog Post](https://pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest) 
+[Summary Blog Post](https://pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest)
 
 [Project Details and Source Code](https://github.com/pixelatedbrian/vigilant-iceberg)
 
@@ -27,7 +27,7 @@ title: Portfolio - Brian Hardenstein
 
 **Smartphone User Data Cleaning and Formatting**
 * **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
-* **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files. 
+* **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files.
 
 <hr />
 
@@ -41,8 +41,8 @@ title: Portfolio - Brian Hardenstein
 
 <hr />
 
-<p align="center" class="ames">
-<img src="/img/Ames_error_over_time.png" alt="Home Price Error Progression" width="512"/>
+<p align="center">
+<img class="ames" src="/img/Ames_error_over_time.png" alt="Home Price Error Progression" width="512"/>
 </p>
 
 [Home Price Prediction: Ames, IA](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
@@ -58,7 +58,7 @@ title: Portfolio - Brian Hardenstein
 </p>
 
 * **Tools used:** BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
-* **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end. 
+* **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end.
 
 <hr />
 
