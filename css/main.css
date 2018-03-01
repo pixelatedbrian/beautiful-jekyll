@@ -9,7 +9,7 @@ layout: null
 body {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
   font-size: 18px;
-  color: #c8c0c5;
+  color: #c1babf;
   position: relative;
   background: #0b0e10;
   {% if site.page-col %}
@@ -340,7 +340,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #6699cc;
+  color: #b17e30;
 }
 
 .post-preview a:focus,
@@ -352,10 +352,10 @@ footer .theme-by {
 .post-preview .post-title {
   font-size: 30px;
   margin-top: 0;
-  color: ##c8c0c5;
+  color: #c1babf;
 }
 .post-preview .post-subtitle {
-  color: #c8c0c5;
+  color: #c1babf;
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
