@@ -25,7 +25,7 @@ p {
   margin: 3px 3px;
 }
 img.ames {
-  background: #c1babf;
+  background: #FFFFFF;
 }
 p a {
   /* text-decoration: underline */
@@ -490,7 +490,7 @@ footer .theme-by {
 }
 .intro-header .page-heading h1 {
   margin-top: 0;
-  font-size: 50px;
+  font-size: 30px;
 }
 .intro-header .post-heading h1 {
   margin-top: 0;

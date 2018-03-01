@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Portfolio - Brian Hardenstein
+title: Portfolio
 ---
 
 **All projects:**
