@@ -122,7 +122,7 @@ img {
 }
 
 .navbar-custom .nav li a {
-  color: #b17e30;
+  color: #de8908;
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 1px;
@@ -340,7 +340,7 @@ footer .theme-by {
 
 .post-preview a {
   text-decoration: none;
-  color: #b17e30;
+  color: #de8908;
 }
 
 .post-preview a:focus,
