@@ -41,7 +41,7 @@ title: Portfolio - Brian Hardenstein
 
 <hr />
 
-<p align="center" background="green">
+<p align="center" class="ames">
 <img src="/img/Ames_error_over_time.png" alt="Home Price Error Progression" width="512"/>
 </p>
 
