@@ -16,7 +16,7 @@ title: Portfolio
 </p>
 
 **Kaggle Statoil Iceberg/Ship Classification contest**
-* **Tools Used:** Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
+* **Tools Used:** Python 3.5, Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
 * **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models.
 
 [Summary Blog Post](https://pixelatedbrian.github.io/2018-01-26-kaggle-statoil-iceberg-ship-contest)
@@ -26,7 +26,7 @@ title: Portfolio
 <hr />
 
 **Smartphone User Data Cleaning and Formatting**
-* **Tools Used:** Python, JSON, tarfile, gunzip, Matplotlib
+* **Tools Used:** Python 2.7, JSON, tarfile, gunzip, Matplotlib
 * **Summary:** Taking in several TB of smart phone data from CrowdSignals.IO, modifying/fixing some values in the data, then filtering the data based on labels that exist in other files. Project consists of many relatively small JSON files (5KB to 10MB) that are stored in large (8+GB compressed) .tar.gz files.
 
 <hr />
@@ -36,7 +36,7 @@ title: Portfolio
 <iframe src='https://gfycat.com/ifr/AlarmedShoddyGordonsetter' align="center" frameborder='0' scrolling='no' allowfullscreen width='500' height='290'></iframe>
 
 
-* **Tools Used:** Python, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
+* **Tools Used:** Python 2.7, overextended Matplotlib, Numpy, FFMpeg, custom FFMpeg Python wrapper
 * **Summary:** As global warming heats up the oceans there is more energy that can power hurricanes. This project was inspired by a /r/dataisbeautiful post on Reddit. I first tried to recreate the original post and then improve on it. Eventually I created 4 different visualizations that were rendered using Matplotlib and my FFMpeg wrapper. More information [here](https://pixelatedbrian.github.io/2017-10-17-atlantic-hurricanes/)
 
 <hr />
@@ -46,7 +46,7 @@ title: Portfolio
 </p>
 
 [Home Price Prediction: Ames, IA](https://github.com/Brionnic/sturdy-umbrella/blob/master/README.md)
-* **Tools used:** Selenium scraping/munging, EDA, stacked ensemble, feature engineering, model experimentation, kaggle-like project, PostGreSQL
+* **Tools used:** Python 2.7, Selenium scraping/munging, EDA, stacked ensemble, feature engineering, model experimentation, kaggle-like project, PostGreSQL
 * **Summary:** Inspired by a meetup presentation implemented home price regressor using Ames, Iowa dataset. Scraped additional data from Story County Assessor website (Ames’ county) to create new features and SQL to manipulate/store data.
 
 <hr />
@@ -57,7 +57,7 @@ title: Portfolio
 <img src="/img/results_example.png" alt="Example Recommendations Against Holdout Data Set" width="512"/>
 </p>
 
-* **Tools used:** BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
+* **Tools used:** Python 2.7, BeautifulSoup, Selenium, AWS EC2/S3, MongoDB, EDA, Spark/PySpark, Spark MLLib NMF ALS explicit/implicit, rating weighting system, model serialization, capstone presentation
 * **Summary:** Scraped 3M web pages in 5+ rounds of iteration, wrangled data with MongoDB workflow, ultimately predicted using ~10M rows of data, switched from explicit ratings to implicit ratings (log10 playtime) which ended up improving predictions quite a bit, presented capstone project to audience > 50. Serialized model for flask website but have not yet implemented front end.
 
 <hr />
