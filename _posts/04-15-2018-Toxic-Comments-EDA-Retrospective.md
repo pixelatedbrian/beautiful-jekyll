@@ -38,7 +38,7 @@ Anyways, this is being noted up front because the comments analyzed in this EDA 
 
 ### "Repetition"
 
-Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning:offensive NSFW words at link](https://www.kaggle.com/fcostartistican/don-t-mess-with-my-mothjer/notebook) This "mothjer" extreme data was a result of a person writing "YOU ARE A MOTHJER _F-word C-twoword_!" 304 times in one message.
+Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning: offensive words](https://www.kaggle.com/fcostartistican/don-t-mess-with-my-mothjer/notebook) This "mothjer" extreme data was a result of a person writing "YOU ARE A MOTHJER _F-word C-twoword_!" 304 times in one message.
 
 <p align="center">
 <img src="/img/repetition.png" width="800" align="middle">
