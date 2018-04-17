@@ -11,17 +11,15 @@ Some of my other interests include:
 
 - Science Fiction/Noir
 - Pixel Art
+- Hiking
+- Travel
 - Indie game dev
 
 <iframe src='https://gfycat.com/ifr/BackLateHoverfly' frameborder='0' scrolling='no' width='480' height='270' allowfullscreen></iframe>
-
 #### Sidescroller airplane game concept
 
 
+
 <iframe src='https://gfycat.com/ifr/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' width='480' height='270' allowfullscreen></iframe>
-
 #### Brickbreaking Medieval RPG
-
-- Hardware hacking with Raspberry Pi
-- Travel
 
