@@ -14,9 +14,13 @@ Some of my other interests include:
 - Indie game dev
 
 <iframe src='https://gfycat.com/BackLateHoverfly' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'></iframe>
+
 #### Sidescroller airplane game concept
 
-<iframe src='https://gfycat.com/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'></iframe>
+
+<iframe src='https://gfycat.com/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'>
+</iframe>
+
 #### Brickbreaking Medieval RPG
 
 - Hardware hacking with Raspberry Pi
