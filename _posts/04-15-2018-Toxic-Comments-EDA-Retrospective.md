@@ -9,7 +9,7 @@ tags: [Retrospective, Classifier, Neural Networks, GRU, EDA, Feature Engineering
 Recently I competed in a Kaggle / Google Jigsaw Toxic Comment Classification Contest which ended in early March.
 
 <p align="center">
-_**Disclaimer: Clicking on source code linked to in this page will link to offensive words and text**_
+<span style="color:red"><b>Disclaimer: Clicking on source code linked to in this page will link to offensive words and text</b></span>
 </p>
 
 The first thing that I did was some exploratory data analysis that compared toxic comments with normal comments. I did this to get an idea for some feature engineering to try later. This is because most forms of word vectorization strip the documents of spaces and other punctuation, as well as making all letters lower case. Therefore the concept was to generate some information to concatenate on the model for information that is typically lost before being fed into a model.
