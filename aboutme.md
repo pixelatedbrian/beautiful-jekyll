@@ -13,12 +13,12 @@ Some of my other interests include:
 - Pixel Art
 - Indie game dev
 
-<iframe src='https://gfycat.com/BackLateHoverfly' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'></iframe>
+<iframe src='https://gfycat.com/BackLateHoverfly' frameborder='0' scrolling='no' allowfullscreen width='800' height='400'></iframe>
 
 #### Sidescroller airplane game concept
 
 
-<iframe src='https://gfycat.com/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'>
+<iframe src='https://gfycat.com/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' allowfullscreen width='800' height='400'>
 </iframe>
 
 #### Brickbreaking Medieval RPG
