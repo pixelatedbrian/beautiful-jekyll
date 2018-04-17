@@ -1,16 +1,24 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Data scientist seeking new opportunities.
 ---
+<img src="https://raw.githubusercontent.com/pixelatedbrian/pixelatedbrian.github.io/master/img/Brian%20in%20JP%20Oktoberfest.jpg" alt="Oktoberfest in Japan" width="233" height="303">
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Brian Hardenstein. I'm a data scientist with a background in network engineering who is currently seeking new opportunities.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+Some of my other interests include:
 
-What else do you need?
+- Science Fiction/Noir
+- Pixel Art
+- Indie game dev
 
-### my history
+<iframe src='https://gfycat.com/BackLateHoverfly' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'></iframe>
+#### Sidescroller airplane game concept
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+<iframe src='https://gfycat.com/InconsequentialColossalAzurevase' frameborder='0' scrolling='no' allowfullscreen width='400' height='225'></iframe>
+#### Brickbreaking Medieval RPG
+
+- Hardware hacking with Raspberry Pi
+- Travel
+
