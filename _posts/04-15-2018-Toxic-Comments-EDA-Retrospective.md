@@ -18,7 +18,7 @@ While I did do term frequency and most common words per class analysis, given th
 
 Anyways, this is being noted up front because the comments analyzed in this EDA had the super repetitive comments cropped to 20 words. So those extreme data didn't have as much of an effect.
 
-**1:** Depending on document processing punctuation could be replaced by reserved words, such as `.` being `<EOS>` but depending on the nuance of the implementation some of this information may still be lost. ie What does one do with `...`, make a `<ELLIPSIS>` reserved character or do `<EOS>` x 3? NLP is hard. : )
+<sup>1:</sup> Depending on document processing punctuation could be replaced by reserved words, such as `.` being `<EOS>` but still some of the nuance may be lost. IE what does one do with `...`? Make a `<ELLIPSIS>` reserved character or do `<EOS>` x 3? NLP is hard. : )
 
 ## Sentence Structure Features:
 
