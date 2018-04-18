@@ -10,15 +10,13 @@ tags: [Retrospective, Classifier, Neural Networks, GRU, EDA, Feature Engineering
 <b>Disclaimer: Clicking on source code linked to in this page will link to offensive words and text</b>
 </p>
 
-Recently I competed in a Kaggle / Google Jigsaw Toxic Comment Classification Contest which ended in early March.
+Recently I competed in a Kaggle / Google Jigsaw Toxic Comment Classification Contest which ended in early March. The challenge was to classify comments as being normal or as being in one or more toxic categories. Some of the classes had large class imbalances and shown by the following graph.
 
-The first thing that I did was some exploratory data analysis that compared toxic comments with normal comments. I did this to get an idea for some feature engineering to try later. This is because most forms of word vectorization strip the documents of spaces and other punctuation, as well as making all letters lower case.<sup>1</sup> Therefore the concept was to generate some information to concatenate on the model for information that is typically lost before being fed into a model.
+<p align="center">
+<img src="/img/class_distribution.png" width="800" align="middle">
+</p>
 
-While I did do term frequency and most common words per class analysis, given the nature of the subject I'm not including those for now because they're foul, racist, and otherwise terrible.  Also during the initial development of the data pipeline it was discovered that some highly repetitive comments were poisoning some of the statistics. _(Which is why a repetition metric was created, more on this later.)_ 
-
-Anyways, this is being noted up front because the comments analyzed in this EDA had the super repetitive comments cropped to 20 words. So those extreme data didn't have as much of an effect.
-
-<sup>1:</sup> Depending on document processing punctuation could be replaced by reserved words, such as `.` being `<EOS>` but still some of the nuance may be lost. IE what does one do with `...`? Make a `<ELLIPSIS>` reserved character or do `<EOS>` x 3? NLP is hard. : )
+Initially I performed EDA looking at the class distributions as well as most common word frequencies per class. Then I started looking at the comments themselves, of different types of classes, and started looking for patterns. Especially patterns that I did not think would survive the normal word vectorization process. The main intuition was to look for features that could be concatenated late in the RNN that would be used to make predictions, providing a bit more signal for the network's decision boundaries.
 
 ## Sentence Structure Features:
 
@@ -28,23 +26,23 @@ Anyways, this is being noted up front because the comments analyzed in this EDA 
 <img src="/img/words_per_comment.png" width="800" align="middle">
 </p>
 
-###### Words per Comment: (redo this graph) _One of the most basic things to look at was to see if there was a difference in length between toxic comments and normal comments. Because it's an exponential distribution a log transformation was also evaluated also._
+###### Words per Comment: _One of the most basic things to look at was to see if there was a difference in length between toxic comments and normal comments. Because it's an exponential distribution a log transformation was also evaluated also._
 
 <p align="center">
 <img src="/img/log10_words_per_comment.png" width="800" align="middle">
 </p>
 
-###### Log10 Words per Comment: (redo this graph) 
+###### Log10 Words per Comment: The sawtooth patterns on the left sides of the plots is due to integer values having a log transformation applied.
 
 ### "Repetition"
 
-Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning: offensive words](https://www.kaggle.com/fcostartistican/don-t-mess-with-my-mothjer/notebook) This "mothjer" extreme data was a result of a person writing "YOU ARE A MOTHJER ETC ETC!" 304 times in one message.
+Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning: offensive words]
 
 <p align="center">
 <img src="/img/repetition.png" width="800" align="middle">
 </p>
 
-###### `Formula is: 1 - (# of unique words / # of all words)` 0 is the value of comments that are totally unique, near 1 would be totally repetitive.  These seem to be distorting the plot so drop those for the next plot.  There is a decent bump in uniqueness for toxic comments.
+###### `Formula is: 1 - (# of unique words / # of all words)` 0 is the value of comments that are totally unique, near 1 would be totally repetitive.  The zero values distort the plot so those are dropped in the next plot.  There is a decent bump in uniqueness for toxic comments.
 
 <p align="center">
 <img src="/img/crop_repetition.png" width="800" align="middle">
