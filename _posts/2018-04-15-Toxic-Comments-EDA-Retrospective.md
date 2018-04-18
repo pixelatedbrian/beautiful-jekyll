@@ -2,7 +2,7 @@
 layout: post
 title: Toxic Comment Competition EDA
 subtitle: Hosted by Kaggle and Google Jigsaw
-image: /img/iceberg/iceberg_icon.png
+image: /img/toxic_emoji.jpg
 tags: [Retrospective, Classifier, Neural Networks, GRU, EDA, Feature Engineering, Keras, Tensorflow]
 ---
 
