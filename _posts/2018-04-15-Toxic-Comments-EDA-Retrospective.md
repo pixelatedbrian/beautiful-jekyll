@@ -36,7 +36,7 @@ Initially I performed EDA looking at the class distributions as well as most com
 
 ### "Repetition"
 
-Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning: offensive words]
+Anecdotally toxic comments sometimes had some extreme data in which a certain comment was copy and pasted hundreds of times until the message buffer was maxed out.  Initially I discovered this during data pipeline related operations and initial EDA with term frequency. Namely because oddly spelled words would end up being in the top 10 non-stop words of a toxic class. One of those examples was "mothjer" which is covered nicely by a fellow Kaggler [here warning: offensive words](https://www.kaggle.com/fcostartistican/don-t-mess-with-my-mothjer/output)
 
 <p align="center">
 <img src="/img/repetition.png" width="800" align="middle">
