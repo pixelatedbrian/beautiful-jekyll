@@ -10,7 +10,23 @@ Currently I'm working on an image classification problem that has 128 classes. (
 
 I've been using transfer learning so far, primarily Inception V3 but also VGG16 and ResNet 50. In attempting to improve my results I read the paper "Imagenet Classification With Deep Convolutional Neural Networks" by Krizhevsky, Sutskever, and Hinton. The paper has a whole section (4.1) on image augmentation, which has been something of interest to me since my entry in the Iceberg/Ship classification contest.  In that contest I only augmented by flipping images over the vertical axis.
 
-For this furniture contest the pictures were scraped from websites and vary in resolution and aspect ratio. So before this paper I had been doing rotation and cropping augmentation. However, this paper introduced something new to me that they called "Fancy PCA".
+For this furniture contest the pictures were scraped from websites and vary in resolution and aspect ratio. So before this paper I had been doing rotation and cropping augmentation. However, this paper introduced something new to me that they called "Fancy PCA".  Details on Fancy PCA will follow below but first some results forward images to demonstrate what it is doing.
+
+Essentially what is happening is that we are finding the eigenvector and eigenvalues of an image. (Really a 2d matrix, in this case consisting of each pixel and it's RGB components) We then draw a random number (α in the formula below) for each color one time per image. Alpha (α) comes from a normal distribution and is zero centered. The paper suggests a standard deviation of 0.1 for that distribution. Then the principal components of the image are scaled by this alpha value and finally added to the pixel's color channels.  This appears to alter the contrast, and somewhat the hue, of the image in a randomized manner but in such a way that conserves the image detail.
+
+This is as opposed to simply adding a random value to each color channel of an image. Most of the time the value changes at the recommended values do not appear noticable to the human eye. (But can be verified by subtracting the modified numpy matrix from the initial numpy matrix.)  For the purposes of this blog post the values have been increased by ~1000x to make the changes more obvious. Also, in the comparison images an image using an algorithm that simply adds random values to a color channel has also been provided. In order to allow comparison of the techniques.
+
+<p align="center">
+<img src="/img/fancy_pca/chair_pca.png" width="400" align="middle">
+</p>
+
+<p align="center">
+<img src="/img/fancy_pca/rack_pca.png" width="400" align="middle">
+</p>
+
+<p align="center">
+<img src="/img/fancy_pca/other_pca.png" width="400" align="middle">
+</p>
 
 > The second form of data augmentation consists of altering the intensities of the RGB channels in
 > training images. Specifically, we perform PCA on the set of RGB pixel values throughout the
