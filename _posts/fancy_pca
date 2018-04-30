@@ -12,25 +12,25 @@ I've been using transfer learning so far, primarily Inception V3 but also VGG16 
 
 For this furniture contest the pictures were scraped from websites and vary in resolution and aspect ratio. So before this paper I had been doing rotation and cropping augmentation. However, this paper introduced something new to me that they called "Fancy PCA".
 
-The second form of data augmentation consists of altering the intensities of the RGB channels in
-training images. Specifically, we perform PCA on the set of RGB pixel values throughout the
-ImageNet training set. To each training image, we add multiples of the found principal components,
-with magnitudes proportional to the corresponding eigenvalues times a random variable drawn from
-a Gaussian with mean zero and standard deviation 0.1. 
+> The second form of data augmentation consists of altering the intensities of the RGB channels in
+> training images. Specifically, we perform PCA on the set of RGB pixel values throughout the
+> ImageNet training set. To each training image, we add multiples of the found principal components,
+> with magnitudes proportional to the corresponding eigenvalues times a random variable drawn from
+> a Gaussian with mean zero and standard deviation 0.1. 
 
-Therefore to each RGB image pixel 
+> Therefore to each RGB image pixel 
 <p align="center">
 <img src="/img/fancy_pca_formula_1.png" width="400" align="middle">
 </p>
- we add the following quantity:
+ > we add the following quantity:
 <p align="center">
 <img src="/img/fancy_pca_formula_2.png" width="600" align="middle">
 </p>
 
-where pi and λi are ith eigenvector and eigenvalue of the 3 × 3 covariance matrix of RGB pixel
-values, respectively, and αi is the aforementioned random variable. Each αi is drawn only once
-for all the pixels of a particular training image until that image is used for training again, at which
-point it is re-drawn. This scheme approximately captures an important property of natural images,
-namely, that object identity is invariant to changes in the intensity and color of the illumination. This
-scheme reduces the top-1 error rate by over 1%.
+> where pi and λi are ith eigenvector and eigenvalue of the 3 × 3 covariance matrix of RGB pixel
+> values, respectively, and αi is the aforementioned random variable. Each αi is drawn only once
+> for all the pixels of a particular training image until that image is used for training again, at which
+> point it is re-drawn. This scheme approximately captures an important property of natural images,
+> namely, that object identity is invariant to changes in the intensity and color of the illumination. This
+> scheme reduces the top-1 error rate by over 1%.
 
