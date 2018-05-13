@@ -12,7 +12,7 @@ title: Portfolio
 <hr />
 
 <p align="center">
-<img src="/img/toxic_ROC.jpg" alt="Toxic Comments" width="512"/>
+<img src="/img/toxic_ROC.png" alt="Toxic Comments" width="512"/>
 </p>
 
 **Kaggle / Google Jigsaw Toxic Comment Classification contest**
