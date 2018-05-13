@@ -20,13 +20,14 @@ title: Portfolio
 * **Summary:** Made a classifier that predicted if a comment was one or more categories of toxic.  Scoring metric was ROC AUC and I finished with an average ROC AUC of 98.2%. 1st Place was ROC AUC of 98.88%.  Evaluated several forms of vectorizing words and word embeddings. Evaluated many types of models but final solution was a bi-directional GRU Recurrent Neural Network. Used AWS EC2 p2.xlarge GPU accelerated instance.
 
 [Blog Post on Feature Engineering/EDA](https://pixelatedbrian.github.io/2018-04-15-Toxic-Comments-EDA-Retrospective/)
+
 [Project Details and Source Code](https://github.com/pixelatedbrian/polished-vernacular)
+
+<hr />
 
 <p align="center">
 <img src="/img/iceberg/statoil.jpg" alt="Radar Data" width="512"/>
 </p>
-
-<hr />
 
 **Kaggle Statoil Iceberg/Ship Classification contest**
 * **Tools Used:** Python 3.5, Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
