@@ -15,7 +15,7 @@ title: Portfolio
 <img src="/img/toxic_ROC.png" alt="Toxic Comments" width="512"/>
 </p>
 
-**Kaggle / Google Jigsaw Toxic Comment Classification contest**
+**Kaggle / Google Jigsaw Toxic Comment Classification Contest**
 * **Tools Used:** NLP, Classifier, Python 3.6, Keras, Tensorflow, AWS, GPU, RNN, Sequence Model, GRU, Feature Engineering, GloVe, TF-IDF
 * **Summary:** Made a classifier that predicted if a comment was one or more categories of toxic.  Scoring metric was ROC AUC and I finished with an average ROC AUC of 98.2%. 1st Place was ROC AUC of 98.88%.  Evaluated several forms of vectorizing words and word embeddings. Evaluated many types of models but final solution was a bi-directional GRU Recurrent Neural Network. Used AWS EC2 p2.xlarge GPU accelerated instance.
 
@@ -29,7 +29,7 @@ title: Portfolio
 <img src="/img/iceberg/statoil.jpg" alt="Radar Data" width="512"/>
 </p>
 
-**Kaggle Statoil Iceberg/Ship Classification contest**
+**Kaggle Statoil Iceberg/Ship Classification Contest**
 * **Tools Used:** Python 3.5, Keras, Tensorflow, AWS, GPU, ConvNet, Data Augmentation
 * **Summary:** Made a classifier that took radar data from a satellite and predicted if an object was a ship or an iceberg. Placed in top 10% of competitors with accuracy exceeding 95%. Used AWS EC2 hardware with GPU acceleration. Made and evaluated several architectures of convolutional neural networks. Experimented with different types of signal processing for radar data as well as data augmentation for models.
 
