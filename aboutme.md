@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: Data scientist seeking new opportunities.
+subtitle: Data scientist/ML Engineer - Computer Vision
 ---
 <img src="https://raw.githubusercontent.com/pixelatedbrian/pixelatedbrian.github.io/master/img/Brian%20in%20JP%20Oktoberfest.jpg" alt="Oktoberfest in Japan" width="233" height="303">
 
